@@ -1,32 +1,42 @@
-# USB Audio Test Tool
+USB Suspend/Resume Tester v1.0.0
+A desktop tool for continuous USB device suspend/resume cycle testing, designed to verify system and hardware stability after repeated suspend and resume operations.
 
-A simple USB audio testing tool for production automation.
+Features
+Auto-detection and enumeration of connected USB devices
 
-## Features
+Customizable suspend/resume delays and test intervals
 
-- USB audio playback test
-- USB audio recording test
-- THD+N measurement
-- SNR analysis
-- Frequency spectrum analysis
+Supports infinite loop or custom cycle stress testing
 
-## Platform
+Real-time colored logs and status validation (PASS / FAIL)
 
-- Windows
-- C#
-- WinForms
-- NAudio
+Test log export (.txt format)
 
-## Use Case
+Safety mechanism (auto-enables device upon test interruption)
 
+Platform
+Windows 10 / 11
+
+Python 3.10+
+
+tkinter (GUI)
+
+pnputil (Device control)
+
+Use Case
 This tool is designed for:
 
-- USB headset manufacturing test
-- QA audio verification
-- automated audio production line testing
+USB hardware stability verification
 
-## Future Roadmap
+Driver and firmware development debugging
 
-- Multi USB device testing
-- Automatic report generation
-- USB suspend/resume validation
+QA automated stress testing
+
+Simulating repeated plugging/unplugging (for non-critical system devices)
+
+Future Roadmap
+Multi-USB device testing support
+
+Automatic test analysis report generation
+
+CLI mode for automated script integration
